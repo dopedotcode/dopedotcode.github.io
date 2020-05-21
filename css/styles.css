@@ -31,9 +31,6 @@ html {
 .icons-social i {
 	font-size: 3em;
 }
-a:hover {
-  color: #fad766;
-}
 
 /* Custom Styles */
 
@@ -77,4 +74,7 @@ main > .tagline {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+a:hover {
+    color: #fad766;
 }
