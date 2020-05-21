@@ -31,6 +31,9 @@ html {
 .icons-social i {
 	font-size: 3em;
 }
+.icons-social:hover {
+  color: #fad766;
+}
 
 /* Custom Styles */
 
