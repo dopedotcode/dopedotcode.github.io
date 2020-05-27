@@ -84,10 +84,7 @@ main > .tagline {
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
-.myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
+.txt-center {text-align: center;}
+.txt-left {text-align: left;}
+.txt-right {text-align: right;}
+.txt-middle {vertical-align: middle;}
