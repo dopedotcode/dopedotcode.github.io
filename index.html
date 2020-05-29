@@ -35,9 +35,27 @@
 	</script>
 </head>
 <body>
+	<script>
+	var myAudio = document.getElementById("lostmojo");
+	var isPlaying = false;
+
+	function togglePlay() {
+	  if (isPlaying) {
+	    myAudio.pause()
+	  } else {
+	    myAudio.play();
+	  }
+	};
+	myAudio.onplaying = function() {
+	  isPlaying = true;
+	};
+	myAudio.onpause = function() {
+	  isPlaying = false;
+	};
+	</script>	
 	<main>
 		<p style="font-family:courier;text-align:center;">The music?😄 Made it myself</p>
-		<i class="fas fa-pause hvr-pulse-grow" onclick="document.getElementById('lostmojo').pause()" /></i>
+		<i class="fas fa-play hvr-pulse-grow" onclick="document.getElementById('lostmojo').toggleplay()" /></i>
 		<div class="intro">Hello, I'm Sabuhi!</div>
 		<div class="tagline">Student | Open-Source Enthusiast</div>
 		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
