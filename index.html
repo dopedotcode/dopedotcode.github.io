@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<audio src="css/musc.mp3" autoplay></audio>
+	<audio id="lostmojo" autoplay="autoplay">
+    	<source src="css.musc.mp3" type="audio/mpeg">
+	</audio>
+	<img src="mute.jpg" onclick="document.getElementById('lostmojo').pause()" />
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
