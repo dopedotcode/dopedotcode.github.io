@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<audio src="demo.mp3" autoplay></audio>
+	<audio id="lostmojo">
+    	<source src="css/musc.mp3" autoplay>
+	</audio>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +36,7 @@
 </head>
 <body>
 	<main>
+		<img src="mute.jpg" onclick="document.getElementById('lostmojo').pause()" />
 		<div class="intro">Hello, I'm Sabuhi!</div>
 		<div class="tagline">Student | Open-Source Enthusiast</div>
 		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
