@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<audio id="lostmojo">
+    	<source src="css/musc.mp3">
+	</audio>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +35,28 @@
 	</script>
 </head>
 <body>
+	
 	<main>
+		<script>
+		var myAudio = document.getElementById("lostmojo");
+		var isPlaying = false;
+
+		function togglePlay() {
+		  if (isPlaying) {
+		    myAudio.pause()
+		  } else {
+		    myAudio.play();
+		  }
+		};
+		myAudio.onplaying = function() {
+		  isPlaying = true;
+		};
+		myAudio.onpause = function() {
+		  isPlaying = false;
+		};
+		</script>
+		<p style="font-family:courier;text-align:center;">The music?😄 Made it myself</p>
+		<i class="fas fa-play hvr-pulse-grow" onclick="toggleplay()" /></i>
 		<div class="intro">Hello, I'm Sabuhi!</div>
 		<div class="tagline">Student | Open-Source Enthusiast</div>
 		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
