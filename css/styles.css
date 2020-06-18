@@ -88,3 +88,11 @@ main > .tagline {
 .txt-left {text-align: left;}
 .txt-right {text-align: right;}
 .txt-middle {vertical-align: middle;}
+.canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
