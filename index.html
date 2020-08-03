@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<audio id="foo1">
-    	<source src="css/1.mp3">
-	</audio>
-	<audio id="foo2">
-    	<source src="css/music3.mp3">
-	</audio>
-	<audio id="foo3">
-    	<source src="css/m5.mp3">
-	</audio>
-	<audio id="foo4">
-    	<source src="css/Music4.mp3">
-	</audio>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,29 +43,6 @@
 <body>
 	
 	<main>
-		<script>
-		function getRandom()
-		{
-		    return (Math.floor((Math.random() * 4) + 1))
-		}	
-		var myAudio = document.getElementById("foo" + getRandom());
-		var isPlaying = false;
-		function togglePlay() {
-		  if (isPlaying) {
-		    myAudio.pause()
-		  } else {
-		    myAudio.play();
-		  }
-		};
-		myAudio.onplaying = function() {
-		  isPlaying = true;
-		};
-		myAudio.onpause = function() {
-		  isPlaying = false;
-		};
-		</script>
-		<p style="font-family:courier;text-align:center;">The music?😄 Made it myself(kinda)</p>
-		<i class="fas fa-play" onclick="togglePlay()" /></i>
 		<div class="intro">Hello, I'm Sabuhi!</div>
 		<div class="tagline">Student | Open-Source Enthusiast</div>
 		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
